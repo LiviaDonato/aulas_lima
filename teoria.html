@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página inicial</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles_teoria.css">
 </head>
 <!-- Aplicando CSS inline, cor de fundo (esta no css/styles.css) -->
 
@@ -199,5 +199,71 @@
             <td>232323</td>
         </tr>
     </table>
+
+        <p>Trabalhando com Formulários</p>
+        <form class="formulario" action="">
+            <label for="">Nome</label>
+            <!-- Insere um campo do tipo digitavel do tipo texto -->
+            <input type="text"><br>
+            <label for="">Sobrenome</label>
+            <input type="text" class="input-nome"><br>
+            <!-- Tipo senha -->
+            <label for="">Senha</label>
+            <input type="password" placeholder="Digite a senha">
+            <input type="button" value="Clique aqui" class="botao">
+            <br>
+            <!-- Incluindo CheckBox(opções) -->
+            <input type="checkbox" name="" id="" class="checar"> Eu tenho uma bicicleta<br>
+            <input type="checkbox" name="" id="" class="checar"> Eu tenho uma moto<br>
+            <input type="checkbox" name="" id="" class="checar"> Eu tenho um carro<br>
+            <!-- Incluindo input de cor -->
+            <input type="color" value="#000000"><br>
+            <label for="">Data de nascimento</label>
+            <!-- Inserindo data -->
+            <input type="date" name="" id="">
+            <input type="datetime-local" name="" id="">
+            <!-- Tipo email -->
+            <input type="email" name="" id="" placeholder="Digite o seu email" class="email">
+            <!-- Incluindo input para selecionar arquivo -->
+            <input type="file">
+            <!-- Input de seleção -->
+            <select name="" id="">
+                <!-- O atributo value enviara o valor do item selecionado para o servidor -->
+                <option value="" selected>Selecione a escolaridade</option>
+                <option value="Primeiro colegial">1º Médio</option>
+                <option value="Segundo colegial">2º Médio</option>
+                <option value="Terceiro colegial">3º Médio</option>
+            </select>
+            <!-- Input de seleção -->
+            <select name="" id="" class="selecao">
+                <!-- O atributo value enviara o valor do item selecionado para o servidor -->
+                <option value="" selected>Selecione a escolaridade</option>
+                <option value="Primeiro colegial">1º Médio</option>
+                <option value="Segundo colegial">2º Médio</option>
+                <option value="Terceiro colegial">3º Médio</option>
+            </select>
+            <!-- Criando input radio button -->
+            <p>Radio button</p>
+            <input type="radio" nome="tamanho">Pequeno
+            <input type="radio" nome="tamanho"checked> Médio
+            <input type="radio" nome="tamanho">Grande
+            <input type="radio" nome="tamanho">Outra
+            <p>Radio button</p>
+            <input type="radio" nome="tamanho" class="radio">Pequeno
+            <input type="radio" nome="tamanho" class="radio" checked> Médio
+            <input type="radio" nome="tamanho" class="radio">Grande
+            <input type="radio" nome="tamanho" class="radio">Outra
+            <!-- Cria um grupo de componentes de formulario -->
+            <fieldset>
+                <legend>Descrição</legend>
+                <textarea name="" id="">
+                </textarea>
+            </fieldset>
+            <!-- Botao de enviar -->
+            <input type="submit" value="Enviar">
+
+            <!-- Botao de limpar ou resetar -->
+             <input type="reset" value="Limpar">
+        </form>
 </body>
 </html>

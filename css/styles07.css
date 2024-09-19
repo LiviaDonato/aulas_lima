@@ -1,0 +1,19 @@
+body {
+    background-color:rgb(127, 168, 255)
+    }
+    .tabela{
+        border: 2px solid #a44fce;
+        padding: 5px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    th {
+        border: 2px solid #4d43d6;
+    }
+    td {
+        border: 2px solid #3ea8c8;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+    }
