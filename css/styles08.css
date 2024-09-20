@@ -1,0 +1,54 @@
+.formulario{
+    background-color: rgb(135, 200, 203);
+    /* Remove a borda do elemento */
+    border: none;
+    width: 300px;
+    height: 630px;
+    margin-left: 50px;
+    /* Define a opacidade do elemento */
+    margin: 0 auto;
+}
+.botao1{
+    background-color: rgb(38, 211, 153);
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    margin: 0 auto;
+}
+.botao2{
+    background-color: rgb(250, 40, 79);
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    margin: 0 auto;
+}
+.botao3{
+    background-color: rgb(176, 87, 206);
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    margin: 0 auto;
+}
+.selecao{
+    appearance: none;
+    width: 300px;
+    padding: 3.5px;
+    font-size: 16px;
+    color: indianred;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgb(19, 50, 72);
+}
+.input {
+    width: 294px;
+    height: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
