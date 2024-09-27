@@ -92,3 +92,130 @@
     align-items: center;
     justify-content: space-between;
 }
+/* justify-content */
+/* flex-start: Os itens se alinham ao lado esquerdo do contêiner.
+flex-end: Os itens se alinham ao lado direito do contêiner.
+center: Os itens se alinham no centro do contêiner.
+space-between: Os itens são exibidos com espaçamento igual entre eles.
+space-around: Os itens são exibidos com espaçamento igual ao redor deles. */
+
+/* align-items */
+/* flex-start: Os itens se alinham à parte superior do contêiner.
+flex-end: Os itens se alinham à parte inferior do contêiner.
+center: Os itens se alinham no centro vertical do contêiner.
+baseline: Os itens são exibidos na linha de base do contêiner.
+stretch: Os itens são esticados para caber no recipiente. */
+
+/* flex-direction */
+/* row: Os itens são colocados da mesma forma que a direção do texto.
+row-reverse: Os itens são colocados na direção oposta à direção do texto.
+column: Os itens são colocados de cima para baixo.
+column-reverse: Os itens são colocados de baixo para cima. */
+
+/* order */
+/* Às vezes, inverter a ordem das linhas ou colunas de um contêiner 
+não é suficiente. Nesses casos, podemos aplicar a propriedade a 
+itens individuais. Por padrão, os itens têm um valor de 0, mas 
+podemos usar essa propriedade para também defini-la como um valor 
+inteiro positivo ou negativo (-2, -1, 0, 1, 2). */
+
+/* align-self */
+/* Outra propriedade que você pode aplicar a itens individuais é .
+Essa propriedade aceita os mesmos valores que e seu valor para o item específico. */
+
+/* flex-wrap */
+/* nowrap: Cada item é ajustado a uma única linha.
+wrap: Os itens se envolvem em linhas adicionais.
+wrap-reverse: Os itens se encaixam em linhas adicionais ao contrário. */
+
+/* Abreviação */
+/* flex-flow: row wrap */
+
+/* align-content */
+/* flex-start: As linhas são embaladas na parte superior do contêiner.
+flex-end: As linhas são embaladas no fundo do contêiner.
+center: As linhas são embaladas no centro vertical do contêiner.
+space-between: As linhas são exibidas com espaçamento igual entre elas.
+space-around: As linhas são exibidas com espaçamento igual ao redor delas.
+stretch: As linhas são esticadas para caber no recipiente. */
+
+.container-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Adiciona scroll na horizontal */
+    gap: 1.6rem;
+    height: 500px;
+}
+.card{
+    width: 300px;
+    height: 388px;
+    flex: 0 0 auto; /* Evita que os card encolhamou se ajustem automaticamente */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(116, 116, 116, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover{
+    /* Serve para criar um efeito hover, mudando a posição do card */
+    transform: translate(-5);
+    box-shadow: 0 8px 12px rgb(145, 169, 255);
+    transform: scale(1.1);
+}
+.cabecalho-card{
+    padding: 16px;
+    text-align: center;
+}
+.titulo-card{
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+.subtitulo-card{
+    margin: 0;
+    font-size: 1rem;
+    color: #777;
+}
+.imagem-card{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagem-card > img{
+    max-width: 100%; /* Mantem o limite maximo do tamanho do container */
+    /* height: auto; */ /* Mantem a proporção da imagem */
+    height: 150px;
+}
+.imagem-card > figcaption{
+    font-size: 0.8rem;
+    padding: 8px;
+    text-align: center;
+    color: #555;
+}
+.conteudo-card{
+    padding: 10px;
+    background-color: rgb(217, 207, 255);
+    text-align: center;
+    height: 70px;
+}
+.rodape-card{
+    background-color: #bcd7f0;
+    text-align: center;
+    padding: 6px;
+}
+.botao-card{
+    text-decoration: none; /* Remove a decoração de linha */
+    color: #90c3f3;
+    background-color: rgb(229, 185, 231);
+    border-radius: 4px;
+    padding: 5px 6px;
+    /* Permite definir largura e altura, alinha elementos na mesma linha */
+    display: inline-block;
+}
+.botao-card:hover{
+    background-color: #9fd9ff;
+    width: 150px;
+}
