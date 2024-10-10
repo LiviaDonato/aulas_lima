@@ -42,7 +42,7 @@ li > a{
     color: azure;
 }
 .acessar{
-    color: rgb(54, 137, 158);
+    color: rgb(61, 128, 147);
 }
 .banner-cafe{
     max-width: 1120px;
@@ -79,4 +79,107 @@ li > a{
 .banner-imagens > figure > img{
     width: 100%;
     border-radius: 5px;
+}
+/* Criando scrool para cards */
+.card-novo{
+    display: flex;
+    overflow: scroll;
+    gap: 3rem;
+    margin: auto;
+    max-width: 1120px;
+}
+/* Removendo a barra de scrool */
+.card-novo::-webkit-scrollbar{
+    display: none;
+}
+.receitas{
+    /* Organizando em colunas */
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    padding: 2.5rem 2rem;
+    margin: auto;
+}
+.cabecalho-card{
+    background-color: rgb(51, 108, 123);
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card{
+    margin-left: 40px;
+    border-radius: 10px;
+    border: 1px solid azure;
+    box-shadow: 5px 0px 10px rgba(76, 196, 229, 0.5);
+    max-width: 260px;
+}
+.rodape-card{
+    background-color: rgb(51, 108, 123);
+    padding: 3px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+button{
+    background-color: rgb(28, 118, 187);
+    width: 80px;
+    color: rgb(41, 56, 92);
+    border-radius: 8px;
+    padding: 4px;
+    border: 1px solid azure;
+}
+.botao-centro{
+    text-align: center;
+}
+/* Mapa */
+.mapa{
+    max-width: 1120px;
+    width: 600px;
+    height: 400px;
+    /* Aplica papel de parede a nossa div */
+    background-image: url(../img/mapa.png);
+    background-repeat: no-repeat;
+    /* Aplica tamanho da imagem em todo o espaço */
+    background-size: cover;
+    margin: 20px auto;
+    position: relative;
+}
+.icone{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(162, 24, 24);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 245, 245);
+    cursor: pointer;
+    font-size: 18px;
+}
+.icone1{
+    top: 40px;
+    left: 100px;
+}
+.icone2{
+    top: 100px;
+    left: 220px;
+}
+/* Criando elemento que não ira aparecer na tela */
+.div-hover{
+    /* Escondendo imagem */
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 500px;
+    height: 400px;
+}
+.icone:hover .div-hover{
+    /* Mostrando imagem */
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: 37%;
 }
