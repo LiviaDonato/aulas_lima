@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="./HTML/css/estilo_flexbox.css">
+</head>
+<body>
+    <h1>Trabalhando com Div</h1>
+    <div class="div1">
+        <h2>Londres</h2>
+        <p>Londres é a capital da Inglaterra</p>
+        <p>Londres tem 13 milhões de habitantes</p>
+    </div>
+    <div class="div2">
+        <h2>Londres</h2>
+        <p>Londres é a capital da Inglaterra</p>
+        <p>Londres tem 13 milhões de habitantes</p>
+    </div>
+    <div class="div3">
+        <h2>Londres</h2>
+        <p>Londres é a capital da Inglaterra</p>
+        <p>Londres tem 13 milhões de habitantes</p>
+    </div>
+    <h1>Trabalhando com Flexbox</h1>
+    <p>Utilizamos flexbox para posicionar os elementos de uma linha ou coluna de forma dinâmica</p>
+    <p>Por padrão, os elementos são exibidos em linha(block)</p>
+    <section class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </section>
+    <p>Flex com mais elementos, prenchendo a largura da tela</p>
+    <section class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+    </section>
+    <p>Flex Diretion - Alterando a direção do elemento</p>
+    <section class="flex">
+        <div class="div-coluna">
+            <img src="https://th.bing.com/th/id/R.97f09d42e177e00e5c4dae7929ce774d?rik=IMoBYggDej%2bCkA&riu=http%3a%2f%2fimages5.fanpop.com%2fimage%2fphotos%2f31300000%2fSpongebob-spongebob-squarepants-31312835-1280-1024.jpg&ehk=gObK%2fCpmk9qac%2b74ca7VJ9XZJci1my2fXzKRJ2oCONA%3d&risl=&pid=ImgRaw&r=0" alt="">
+            <p>Bob Esponja</p>
+        </div>
+        <div class="div-coluna">
+            <img src="https://th.bing.com/th/id/OIP.tfnzJjHiPFZchNR2yvsPrQHaGK?w=748&h=623&rs=1&pid=ImgDetMain" alt="">
+            <p>Bob Esponja</p>
+        </div>
+        <div class="div-coluna">
+            <img src="https://th.bing.com/th/id/R.dc329bc6840b0c7695e243647eade3ef?rik=IY6SLRvLsVQjhQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-s6vWbUK57pg%2fUhV3oYvOTtI%2fAAAAAAAAAU0%2fCEqkujRgPjU%2fs1600%2fBob%2bEsponja.jpg&ehk=6eDXxvM%2bAQHCgJIBF%2f%2bnL317PudANeJdrckFUUwtCog%3d&risl=&pid=ImgRaw&r=0" alt="">
+            <p>Bob Esponja</p>
+        </div>
+        <div class="div-coluna">
+            <img src="https://th.bing.com/th/id/R.09ca47b01bf781431c413419eb7590d9?rik=HKz79fszc8LsKg&riu=http%3a%2f%2fwww.gifss.com%2fdibujos-animados%2fbob-esponja%2ffondo-bob-esponja.jpg&ehk=0tHX1CXRty0Z8Hpswl6GPz00dAoy37lHEO0vYE%2fzeKQ%3d&risl=&pid=ImgRaw&r=0" alt="">
+            <p>Bob Esponja</p>
+        </div>
+    </section>
+    <p>Flex Wrap - Faz a quebra do elemento quando não ha mais espaço na tela</p>
+    <section class="secao">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/OIP.tfnzJjHiPFZchNR2yvsPrQHaGK?w=748&h=623&rs=1&pid=ImgDetMain" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.dc329bc6840b0c7695e243647eade3ef?rik=IY6SLRvLsVQjhQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-s6vWbUK57pg%2fUhV3oYvOTtI%2fAAAAAAAAAU0%2fCEqkujRgPjU%2fs1600%2fBob%2bEsponja.jpg&ehk=6eDXxvM%2bAQHCgJIBF%2f%2bnL317PudANeJdrckFUUwtCog%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.09ca47b01bf781431c413419eb7590d9?rik=HKz79fszc8LsKg&riu=http%3a%2f%2fwww.gifss.com%2fdibujos-animados%2fbob-esponja%2ffondo-bob-esponja.jpg&ehk=0tHX1CXRty0Z8Hpswl6GPz00dAoy37lHEO0vYE%2fzeKQ%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.09ca47b01bf781431c413419eb7590d9?rik=HKz79fszc8LsKg&riu=http%3a%2f%2fwww.gifss.com%2fdibujos-animados%2fbob-esponja%2ffondo-bob-esponja.jpg&ehk=0tHX1CXRty0Z8Hpswl6GPz00dAoy37lHEO0vYE%2fzeKQ%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.09ca47b01bf781431c413419eb7590d9?rik=HKz79fszc8LsKg&riu=http%3a%2f%2fwww.gifss.com%2fdibujos-animados%2fbob-esponja%2ffondo-bob-esponja.jpg&ehk=0tHX1CXRty0Z8Hpswl6GPz00dAoy37lHEO0vYE%2fzeKQ%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.09ca47b01bf781431c413419eb7590d9?rik=HKz79fszc8LsKg&riu=http%3a%2f%2fwww.gifss.com%2fdibujos-animados%2fbob-esponja%2ffondo-bob-esponja.jpg&ehk=0tHX1CXRty0Z8Hpswl6GPz00dAoy37lHEO0vYE%2fzeKQ%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.09ca47b01bf781431c413419eb7590d9?rik=HKz79fszc8LsKg&riu=http%3a%2f%2fwww.gifss.com%2fdibujos-animados%2fbob-esponja%2ffondo-bob-esponja.jpg&ehk=0tHX1CXRty0Z8Hpswl6GPz00dAoy37lHEO0vYE%2fzeKQ%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.09ca47b01bf781431c413419eb7590d9?rik=HKz79fszc8LsKg&riu=http%3a%2f%2fwww.gifss.com%2fdibujos-animados%2fbob-esponja%2ffondo-bob-esponja.jpg&ehk=0tHX1CXRty0Z8Hpswl6GPz00dAoy37lHEO0vYE%2fzeKQ%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.09ca47b01bf781431c413419eb7590d9?rik=HKz79fszc8LsKg&riu=http%3a%2f%2fwww.gifss.com%2fdibujos-animados%2fbob-esponja%2ffondo-bob-esponja.jpg&ehk=0tHX1CXRty0Z8Hpswl6GPz00dAoy37lHEO0vYE%2fzeKQ%3d&risl=&pid=ImgRaw&r=0" alt="">
+    </section>
+    <p>Justify - content - alinha os itens flex do container de acordo com a direção</p>
+    <p>Alinha ao inicio</p>
+    <section class="alinhar-esquerda">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/OIP.tfnzJjHiPFZchNR2yvsPrQHaGK?w=748&h=623&rs=1&pid=ImgDetMain" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.dc329bc6840b0c7695e243647eade3ef?rik=IY6SLRvLsVQjhQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-s6vWbUK57pg%2fUhV3oYvOTtI%2fAAAAAAAAAU0%2fCEqkujRgPjU%2fs1600%2fBob%2bEsponja.jpg&ehk=6eDXxvM%2bAQHCgJIBF%2f%2bnL317PudANeJdrckFUUwtCog%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.09ca47b01bf781431c413419eb7590d9?rik=HKz79fszc8LsKg&riu=http%3a%2f%2fwww.gifss.com%2fdibujos-animados%2fbob-esponja%2ffondo-bob-esponja.jpg&ehk=0tHX1CXRty0Z8Hpswl6GPz00dAoy37lHEO0vYE%2fzeKQ%3d&risl=&pid=ImgRaw&r=0" alt="">
+    </section>
+    <p>Alinhar ao centro</p>
+    <section class="alinhar-centro">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/OIP.tfnzJjHiPFZchNR2yvsPrQHaGK?w=748&h=623&rs=1&pid=ImgDetMain" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.dc329bc6840b0c7695e243647eade3ef?rik=IY6SLRvLsVQjhQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-s6vWbUK57pg%2fUhV3oYvOTtI%2fAAAAAAAAAU0%2fCEqkujRgPjU%2fs1600%2fBob%2bEsponja.jpg&ehk=6eDXxvM%2bAQHCgJIBF%2f%2bnL317PudANeJdrckFUUwtCog%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.09ca47b01bf781431c413419eb7590d9?rik=HKz79fszc8LsKg&riu=http%3a%2f%2fwww.gifss.com%2fdibujos-animados%2fbob-esponja%2ffondo-bob-esponja.jpg&ehk=0tHX1CXRty0Z8Hpswl6GPz00dAoy37lHEO0vYE%2fzeKQ%3d&risl=&pid=ImgRaw&r=0" alt="">
+    </section>
+    <p>Alinhar ao final</p>
+    <section class="alinhar-direita">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/OIP.tfnzJjHiPFZchNR2yvsPrQHaGK?w=748&h=623&rs=1&pid=ImgDetMain" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.dc329bc6840b0c7695e243647eade3ef?rik=IY6SLRvLsVQjhQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-s6vWbUK57pg%2fUhV3oYvOTtI%2fAAAAAAAAAU0%2fCEqkujRgPjU%2fs1600%2fBob%2bEsponja.jpg&ehk=6eDXxvM%2bAQHCgJIBF%2f%2bnL317PudANeJdrckFUUwtCog%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.09ca47b01bf781431c413419eb7590d9?rik=HKz79fszc8LsKg&riu=http%3a%2f%2fwww.gifss.com%2fdibujos-animados%2fbob-esponja%2ffondo-bob-esponja.jpg&ehk=0tHX1CXRty0Z8Hpswl6GPz00dAoy37lHEO0vYE%2fzeKQ%3d&risl=&pid=ImgRaw&r=0" alt="">
+    </section>
+    <p>Alinha os elementos nos cantos e ajusta ao centro</p>
+    <section class="alinhar-entre">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/OIP.tfnzJjHiPFZchNR2yvsPrQHaGK?w=748&h=623&rs=1&pid=ImgDetMain" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.dc329bc6840b0c7695e243647eade3ef?rik=IY6SLRvLsVQjhQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-s6vWbUK57pg%2fUhV3oYvOTtI%2fAAAAAAAAAU0%2fCEqkujRgPjU%2fs1600%2fBob%2bEsponja.jpg&ehk=6eDXxvM%2bAQHCgJIBF%2f%2bnL317PudANeJdrckFUUwtCog%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.09ca47b01bf781431c413419eb7590d9?rik=HKz79fszc8LsKg&riu=http%3a%2f%2fwww.gifss.com%2fdibujos-animados%2fbob-esponja%2ffondo-bob-esponja.jpg&ehk=0tHX1CXRty0Z8Hpswl6GPz00dAoy37lHEO0vYE%2fzeKQ%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.97f09d42e177e00e5c4dae7929ce774d?rik=IMoBYggDej%2bCkA&riu=http%3a%2f%2fimages5.fanpop.com%2fimage%2fphotos%2f31300000%2fSpongebob-spongebob-squarepants-31312835-1280-1024.jpg&ehk=gObK%2fCpmk9qac%2b74ca7VJ9XZJci1my2fXzKRJ2oCONA%3d&risl=&pid=ImgRaw&r=0" alt="">
+    </section>
+    <p>Alinhar os elementos a partir do espaço ao ao redor</p>
+    <section class="alinhar-redor">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/OIP.tfnzJjHiPFZchNR2yvsPrQHaGK?w=748&h=623&rs=1&pid=ImgDetMain" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.dc329bc6840b0c7695e243647eade3ef?rik=IY6SLRvLsVQjhQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-s6vWbUK57pg%2fUhV3oYvOTtI%2fAAAAAAAAAU0%2fCEqkujRgPjU%2fs1600%2fBob%2bEsponja.jpg&ehk=6eDXxvM%2bAQHCgJIBF%2f%2bnL317PudANeJdrckFUUwtCog%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.09ca47b01bf781431c413419eb7590d9?rik=HKz79fszc8LsKg&riu=http%3a%2f%2fwww.gifss.com%2fdibujos-animados%2fbob-esponja%2ffondo-bob-esponja.jpg&ehk=0tHX1CXRty0Z8Hpswl6GPz00dAoy37lHEO0vYE%2fzeKQ%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.97f09d42e177e00e5c4dae7929ce774d?rik=IMoBYggDej%2bCkA&riu=http%3a%2f%2fimages5.fanpop.com%2fimage%2fphotos%2f31300000%2fSpongebob-spongebob-squarepants-31312835-1280-1024.jpg&ehk=gObK%2fCpmk9qac%2b74ca7VJ9XZJci1my2fXzKRJ2oCONA%3d&risl=&pid=ImgRaw&r=0" alt="">
+    </section>
+    <p>Espaçamento usando colunas</p>
+    <section class="alinhar-coluna">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/OIP.tfnzJjHiPFZchNR2yvsPrQHaGK?w=748&h=623&rs=1&pid=ImgDetMain" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.dc329bc6840b0c7695e243647eade3ef?rik=IY6SLRvLsVQjhQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-s6vWbUK57pg%2fUhV3oYvOTtI%2fAAAAAAAAAU0%2fCEqkujRgPjU%2fs1600%2fBob%2bEsponja.jpg&ehk=6eDXxvM%2bAQHCgJIBF%2f%2bnL317PudANeJdrckFUUwtCog%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.09ca47b01bf781431c413419eb7590d9?rik=HKz79fszc8LsKg&riu=http%3a%2f%2fwww.gifss.com%2fdibujos-animados%2fbob-esponja%2ffondo-bob-esponja.jpg&ehk=0tHX1CXRty0Z8Hpswl6GPz00dAoy37lHEO0vYE%2fzeKQ%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <img class="secao-imagem" src="https://th.bing.com/th/id/R.97f09d42e177e00e5c4dae7929ce774d?rik=IMoBYggDej%2bCkA&riu=http%3a%2f%2fimages5.fanpop.com%2fimage%2fphotos%2f31300000%2fSpongebob-spongebob-squarepants-31312835-1280-1024.jpg&ehk=gObK%2fCpmk9qac%2b74ca7VJ9XZJci1my2fXzKRJ2oCONA%3d&risl=&pid=ImgRaw&r=0" alt="">
+    </section>
+    <section class="alinhar-itens-centro">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </section>
+    <p>Cards usando divs</p>
+    <section class="container-card">
+        <article class="card">
+            <header class="cabecalho-card">
+                <h2 class="titulo-card">Pokedex</h2>
+                <p class="subtitulo-card">Pikachu</p>
+            </header>
+            <figure class="imagem-card">
+                <img src="https://th.bing.com/th/id/OIP.nnEniuPS9CDTY7xTR-b5VQHaFf?rs=1&pid=ImgDetMain" alt="">
+                <figcaption>Pokemon do tipo Elétrico</figcaption>
+            </figure>
+            <div class="conteudo-card">
+                <p>Este pokemon é poderoso, podendo emitir raios elétricos</p>
+            </div>
+            <footer class="rodape-card">
+                <a href="" class="botao-card">Saiba mais</a>
+            </footer>
+        </article>
+        <article class="card">
+            <header class="cabecalho-card">
+                <h2 class="titulo-card">Pokedex</h2>
+                <p class="subtitulo-card">Bulbasaur</p>
+            </header>
+            <figure class="imagem-card">
+                <img src="https://th.bing.com/th/id/R.18acf149c2c6b41f08b6370e08b0f300?rik=iuqI22h%2b647rfg&riu=http%3a%2f%2fpre02.deviantart.net%2f39a6%2fth%2fpre%2ff%2f2014%2f045%2f1%2f0%2ffree_bulbasaur_pokemon_vector_by_emerald_stock-d76h6sr.png&ehk=Xloj8tEWE4xM9FLLiXb8JQGIPx7XiWtAAmjYppf%2fFH0%3d&risl=&pid=ImgRaw&r=0" alt="">
+                <figcaption>Pokemon do tipo Planta</figcaption>
+            </figure>
+            <div class="conteudo-card">
+                <p>Este pokemon é poderoso, podendo capturar seus oponetes</p>
+            </div>
+            <footer class="rodape-card">
+                <a href="" class="botao-card">Saiba mais</a>
+            </footer>
+        </article>
+        <article class="card">
+            <header class="cabecalho-card">
+                <h2 class="titulo-card">Pokedex</h2>
+                <p class="subtitulo-card">Charmander</p>
+            </header>
+            <figure class="imagem-card">
+                <img src="https://th.bing.com/th/id/OIP.1SIAYAGiLv2koOWYnMNxuAHaHa?w=167&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                <figcaption>Pokemon do tipo Fogo</figcaption>
+            </figure>
+            <div class="conteudo-card">
+                <p>Este pokemon é poderoso, podendo queimar seus oponetes</p>
+            </div>
+            <footer class="rodape-card">
+                <a href="" class="botao-card">Saiba mais</a>
+            </footer>
+        </article>
+        <article class="card">
+            <header class="cabecalho-card">
+                <h2 class="titulo-card">Pokedex</h2>
+                <p class="subtitulo-card">Pikachu</p>
+            </header>
+            <figure class="imagem-card">
+                <img src="https://th.bing.com/th/id/OIP.nnEniuPS9CDTY7xTR-b5VQHaFf?rs=1&pid=ImgDetMain" alt="">
+                <figcaption>Pokemon do tipo Elétrico</figcaption>
+            </figure>
+            <div class="conteudo-card">
+                <p>Este pokemon é poderoso, podendo emitir raios elétricos</p>
+            </div>
+            <footer class="rodape-card">
+                <a href="" class="botao-card">Saiba mais</a>
+            </footer>
+        </article>
+        <article class="card">
+            <header class="cabecalho-card">
+                <h2 class="titulo-card">Pokedex</h2>
+                <p class="subtitulo-card">Bulbasaur</p>
+            </header>
+            <figure class="imagem-card">
+                <img src="https://th.bing.com/th/id/R.18acf149c2c6b41f08b6370e08b0f300?rik=iuqI22h%2b647rfg&riu=http%3a%2f%2fpre02.deviantart.net%2f39a6%2fth%2fpre%2ff%2f2014%2f045%2f1%2f0%2ffree_bulbasaur_pokemon_vector_by_emerald_stock-d76h6sr.png&ehk=Xloj8tEWE4xM9FLLiXb8JQGIPx7XiWtAAmjYppf%2fFH0%3d&risl=&pid=ImgRaw&r=0" alt="">
+                <figcaption>Pokemon do tipo Planta</figcaption>
+            </figure>
+            <div class="conteudo-card">
+                <p>Este pokemon é poderoso, podendo capturar seus oponetes</p>
+            </div>
+            <footer class="rodape-card">
+                <a href="" class="botao-card">Saiba mais</a>
+            </footer>
+        </article>
+        <article class="card">
+            <header class="cabecalho-card">
+                <h2 class="titulo-card">Pokedex</h2>
+                <p class="subtitulo-card">Charmander</p>
+            </header>
+            <figure class="imagem-card">
+                <img src="https://th.bing.com/th/id/OIP.1SIAYAGiLv2koOWYnMNxuAHaHa?w=167&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                <figcaption>Pokemon do tipo Fogo</figcaption>
+            </figure>
+            <div class="conteudo-card">
+                <p>Este pokemon é poderoso, podendo queimar seus oponetes</p>
+            </div>
+            <footer class="rodape-card">
+                <a href="" class="botao-card">Saiba mais</a>
+            </footer>
+        </article>
+    </section>
+</body>
+</html>
